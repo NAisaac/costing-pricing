@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
-    <title>Costing +_Pricing Page</title>
+    <title>Input Page</title>
   </head>
   <body>
     <br/><h2>Costing & Pricing Page</h2><br/>
@@ -139,7 +139,38 @@
       </div>
       <br/>
       <div class="row justify-content-md-center">
-        <button type="button" class="col-lg-4 btn btn-primary">Calculate</button>
+        <!-- Button trigger modal -->
+        <button type="button" class="col-lg-4 btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Calculate
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cost</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <ul>
+                  <li>Price per Unit</li>
+                  <li>Total Units</li>
+                  <li>Shipping & Tax</li>
+                  <li>Exchange Rate</li>
+                  <li>...</li>
+                  <li>Total</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Email</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <br/>
     </form>
